@@ -1,0 +1,11 @@
+repositories:
+  - name: jetstack
+    url: https://charts.jetstack.io
+
+releases:
+  - name: mychart
+    chart: .
+    namespace: mychart
+    values:
+      - ./values.yaml
+    installed: true
